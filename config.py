@@ -25,3 +25,5 @@ VERSION = os.getenv("VERSION", "2.2")
 ALLOW_LOGIN_SECONDS = int(os.getenv("ALLOW_LOGIN_SECONDS", "60") or "60")
 GUARD_INTERVAL = int(os.getenv("GUARD_INTERVAL", "5") or "5")
 IMAP_TIMEOUT_SECONDS = int(os.getenv("IMAP_TIMEOUT_SECONDS", "15") or "15")
+# Telethon connection timeout (seconds) — required by utils/session_utils.py
+MTPROTO_TIMEOUT = int(os.getenv("MTPROTO_TIMEOUT", "15") or "15")
